@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title >Quiz --- Jàng Afrig </title >
+    <meta charset="UTF-8">
+    <title>Quiz — Jàng Afrig</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header >
-<h1>Jàng Afrig </h1>
-<p>Apprendre l'Afrique , un pays à la fois </p>
-</header >
-<nav>
-<a href="index.html">Accueil </a> |
-<a href="quiz.html">Jouer </a> |
-<a href="scores.html">Mes Scores </a> |
-<a href="apropos.html">À propos </a>
-</nav>
-<main>
-<section >
-<h2>Avant de jouer </h2>
-<form>
-    <input type="number" value="20">
-    <input type="radio" id="mode1" name="mode" value="capitales">
-    <label for="mode1">Capitales</label>
-    <input type="radio" id="mode2" name="mode" value="drapeaux">
-    <label for="mode2">Drapeaux</label>
-    <p>
-<label for="pseudo">Votre pseudo :</label >
-<input type="text" id="pseudo" name="pseudo">
- </p>
-<p>
-<label for="mode">Mode de jeu :</label >
-<select id="mode" name="mode" required >
-<option value="">-- Choisir un mode
---</option >
-<option value="capitales">Capitales </option >
-<option value="drapeaux">Drapeaux </option >
-<option value="langues">Langues </option >
-<option value="voisins">Voisins </option >
-<option value="chrono">Chrono </option >
-</select >
-</p>
-<p>
-<button type="submit">Commencer le quiz </button >
-</p>
-</form>
-</section >
-</main>
-<footer >
-<p>&copy; 2025--2026 Jàng Afrig --- L1 DUT1-Info,
-ESP/UCAD.</p>
-</footer >
+    <header>
+        <h1>Jàng Afrig</h1>
+        <p>Apprendre l'Afrique, un pays à la fois</p>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a> 
+        <a href="quiz.html">Jouer</a> 
+        <a href="scores.html">Mes Scores</a> 
+        <a href="apropos.html">À propos</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Avant de jouer</h2>
+            <form>
+                <p>
+                    <label for="pseudo">Votre pseudo :</label>
+                    <input type="text" id="pseudo" name="pseudo" required>
+                </p>
+                <p>
+                    <label for="nb_questions">Nombre de questions :</label>
+                    <input type="number" id="nb_questions" name="nb_questions" value="20" min="1" max="54">
+                </p>
+                <p>
+                    <label for="mode">Mode de jeu :</label>
+                    <select id="mode" name="mode" required>
+                        <option value="">-- Choisir un mode --</option>
+                        <option value="capitales">Capitales</option>
+                        <option value="drapeaux">Drapeaux</option>
+                        <option value="langues">Langues</option>
+                        <option value="voisins">Voisins</option>
+                        <option value="chrono">Chrono</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="submit" class="btn btn-primary">Commencer le quiz</button>
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025–2026 Jàng Afrig — L1 DUT1-Info, ESP/UCAD.</p>
+    </footer>
 </body>
 </html>
